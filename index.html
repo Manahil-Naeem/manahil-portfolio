@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manahil's Portfolio | Software Engineering Student & Full-Stack Developer</title>
+  <meta name="description" content="Manahil's Portfolio - Software Engineering Student at SZABIST & Full-Stack Developer passionate about building real-world web applications.">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✨</text></svg>">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo" aria-label="Manahil's Portfolio Homepage">
+        <span class="logo-text">Manahil's Portfolio</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Mobile Menu Trigger) -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Switch Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation" hidden>
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="mailto:naeemmanahil89@gmail.com" class="btn btn-primary btn-full">
+          <span>Get in Touch</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Available for Opportunities</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Hi, I'm <span class="gradient-text">Manahil</span>
+          </h1>
+
+          <p class="hero-subheadline">
+            Software Engineering Student at SZABIST &amp; Full-Stack Developer passionate about building real-world web applications.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Hero Tech Pills Summary -->
+          <div class="hero-tech-strip">
+            <span class="tech-strip-label">Core Focus:</span>
+            <div class="tech-strip-tags">
+              <span class="mini-tag">Full-Stack Development</span>
+              <span class="mini-tag">Database Integration</span>
+              <span class="mini-tag">Modern Web Tools</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative Hero Graphic / Terminal Card -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-terminal-card">
+            <div class="terminal-bar">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+              <span class="terminal-title">developer.ts</span>
+            </div>
+            <pre class="terminal-code"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Manahil"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full-Stack Developer"</span>,
+  <span class="code-prop">institution</span>: <span class="code-string">"SZABIST"</span>,
+  <span class="code-prop">passion</span>: <span class="code-string">"Real-world web apps"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-string">"JavaScript"</span>, <span class="code-string">"Python"</span>,
+    <span class="code-string">"Supabase"</span>, <span class="code-string">"HTML5/CSS3"</span>
+  ],
+  <span class="code-prop">status</span>: <span class="code-string">"Always Building 🚀"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A brief overview of my engineering journey and academic background.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-about">
+            <div class="about-icon-header">
+              <div class="accent-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <span class="badge-outline">SZABIST Undergraduate</span>
+            </div>
+            <p class="about-text">
+              I am a Software Engineering student at SZABIST focused on full-stack development, database integration, and creating functional web tools. Combining solid computer science fundamentals with modern hands-on engineering, I love taking ideas from concept to functional production deployments that deliver clean interfaces and dependable backends.
+            </p>
+          </div>
+
+          <!-- Quick Highlights / Pillars -->
+          <div class="about-feature-cards">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="feature-title">Full-Stack Development</h3>
+                <p class="feature-desc">Building responsive, accessible frontends coupled with efficient backends and APIs.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="feature-title">Database Integration</h3>
+                <p class="feature-desc">Designing reliable schemas, queries, and cloud database integrations using Supabase &amp; SQL.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="feature-title">Functional Web Tools</h3>
+                <p class="feature-desc">Crafting practical solutions and e-commerce platforms solving tangible, real-world problems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Project</h2>
+          <p class="section-subtitle">A spotlight on real-world web application development and database integration.</p>
+        </div>
+
+        <div class="project-showcase">
+          <article class="project-card">
+            <!-- Project Header Mockup -->
+            <div class="project-preview">
+              <div class="preview-browser-bar">
+                <div class="browser-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="browser-url">tiny-crochet-friends.vercel.app</div>
+                <div class="browser-badge">
+                  <span class="status-indicator"></span> Live
+                </div>
+              </div>
+              <div class="preview-inner">
+                <div class="project-visual-canvas">
+                  <div class="crochet-badge-card">
+                    <span class="crochet-emoji">🧶</span>
+                    <h4>Tiny Crochet Friends</h4>
+                    <p>Handmade E-Commerce Collection</p>
+                  </div>
+                  <div class="preview-tag-floating">Supabase Connected</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+              <div class="project-meta-top">
+                <span class="project-label">Featured E-Commerce App</span>
+                <span class="badge-status">Production Ready</span>
+              </div>
+
+              <h3 class="project-name">Tiny Crochet Friends E-Commerce Store</h3>
+
+              <p class="project-description">
+                An online store built for handmade products featuring dynamic product listing and database integration. The platform delivers seamless browsing for artisan creations, reliable state management, and real-time backend connectivity.
+              </p>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-tech-stack" aria-label="Project Technologies">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Vercel</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-actions">
+                <a href="https://tiny-crochet-friends.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary project-btn">
+                  <span>Live Demo</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+                <a href="https://github.com/Manahil-Naeem/tiny-crochet-friends" target="_blank" rel="noopener noreferrer" class="btn btn-secondary project-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tech Stack Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills &amp; Tech Stack</h2>
+          <p class="section-subtitle">Technologies, frameworks, and developer tools in my daily workflow.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Languages & Frameworks -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Languages &amp; Frameworks</h3>
+            </div>
+            <p class="category-subtitle">Core coding languages and frontend engineering foundations.</p>
+            <div class="skill-items-grid">
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">HTML5</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">CSS3</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">JavaScript</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">Python</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">Java</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Databases &amp; Tools</h3>
+            </div>
+            <p class="category-subtitle">Cloud databases, deployment platforms, and version control.</p>
+            <div class="skill-items-grid">
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">Supabase</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">Git</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">GitHub</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">Vercel</span>
+              </div>
+              <div class="skill-pill">
+                <span class="pill-dot"></span>
+                <span class="pill-name">VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">Have a project, opportunity, or simply want to connect? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-content">
+            <h3 class="contact-heading">Let's build something great together.</h3>
+            <p class="contact-description">
+              Feel free to reach out via email or connect with me through GitHub and LinkedIn.
+            </p>
+
+            <div class="contact-methods">
+              <a href="mailto:naeemmanahil89@gmail.com" class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-type">Direct Email</span>
+                  <span class="contact-value">naeemmanahil89@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/Manahil-Naeem" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-type">GitHub Profile</span>
+                  <span class="contact-value">github.com/Manahil-Naeem</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/manahil-naeeem/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-type">LinkedIn Profile</span>
+                  <span class="contact-value">linkedin.com/in/manahil-naeeem</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Email Action Button -->
+            <div class="contact-cta">
+              <a href="mailto:naeemmanahil89@gmail.com" class="btn btn-primary btn-large">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Say Hello Directly</span>
+              </a>
+              <button id="copy-email-btn" class="btn btn-secondary" title="Copy email address to clipboard">
+                <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span class="copy-text">Copy Email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-text">Manahil's Portfolio</span>
+        </a>
+        <p class="footer-tagline">Building clean, functional, and responsive web experiences.</p>
+      </div>
+
+      <div class="footer-socials" aria-label="Social links">
+        <a href="https://github.com/Manahil-Naeem" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/manahil-naeeem/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="mailto:naeemmanahil89@gmail.com" class="social-icon-btn" aria-label="Email Manahil">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Manahil. Built with clean code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scroll-to-top" class="scroll-top-btn" aria-label="Scroll back to top" title="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
